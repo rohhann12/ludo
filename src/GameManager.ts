@@ -1,9 +1,11 @@
 import { WebSocket } from "ws";
-import { Game } from "./Game";
+import { Game } from "./GameSetup";
 
 
 export class gameManager{
-  
+    private GameMoves:string[]
 
-
+    constructor(){
+        this.GameMoves=[]
+    }
 }

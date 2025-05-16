@@ -1,3 +1,4 @@
 export const GAME_INIT="GAME_INIT"
-export const JOIN_GAME="JOIN_GAME"
+export const JOIN="JOIN"
 export const ACTION="ACTION"
+export const MAKE_MOVE="MAKE_MOVE"
