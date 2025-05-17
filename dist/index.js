@@ -16,9 +16,11 @@ wss.on('connection', function connection(ws) {
             else if (parsed.action === message_1.JOIN) {
                 game.joinGame(ws, Number(parsed.otp));
             }
+            else if (parsed.action === message_1.ROLL) {
+                game.diceRoll(ws);
+            }
             else if (parsed.action === message_1.MAKE_MOVE) {
-                game.diceRoll();
-                game.makeMove(parsed.move, parsed.gotiIndex);
+                game.makeMove(ws, parsed.move, parsed.gotiIndex);
             }
             else {
                 ws.send(JSON.stringify({ error: 'Unknown action type' }));

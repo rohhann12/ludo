@@ -22,3 +22,11 @@
 // 1%4=1
 // 2%4=2
 // 3%4=3
+
+// one player can hit roll only once 
+
+
+// player change ni hora
+
+
+// add ki sabko mile ki jande ne join kra h
